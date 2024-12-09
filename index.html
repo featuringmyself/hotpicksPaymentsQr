@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI QR Code Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video src="https://cdn.pixabay.com/video/2023/07/04/169951-842348732_large.mp4" autoplay loop muted></video>
+    <div id="main">
+        <h1>UPI QR Code Generator</h1>
+        <form id="upiForm"><br><br>
+            <input type="number" id="amount" placeholder="Enter Amount" required><br><br>
+            <button type="submit">Generate QR Code</button>
+        </form>
+        <div id="qrCode" class="qr-container">QR Code Here</div>
+        <button id="printBtn" style="display: none;">Print QR Code</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
